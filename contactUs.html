@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Form" />
+    <meta
+      property="og:description"
+      content="Amet ullamcorper viverra nulla commodo risus, turpis feugiat tristique. Ut pulvinar ipsum nec non viverra turpi. Are you a hospitality professional looking for your next opportunity? As a largest and only national hospitality."
+    />
+    <meta property="og:image" content="assets/images/logo.png" />
+
+    <title>Prospective Agent Form</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/additional-methods.min.js"></script>
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <nav class="navbar navbar-expand-sm p-0">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="collapsibleNavId"
+          >
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="indexform.html"
+                  >Prospective Agent Form
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="senior-solution.html"
+                  >Senior Solutions Policy Holder Form</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="group-broker.html">
+                  Group broker Form</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="employe-group.html">
+                  Employer Group</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contactUs.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="RAQ.html"> RAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- / Header -->
+    <section class="hero">
+      <div class="container">
+        <form id="contactUs">
+          <h1>Contact Us</h1>
+
+          <p>
+            <span id="chat"
+              >We would love to chat with you about our products. Please tell us
+              a little about yourself and what you are looking for.</span
+            >
+          </p>
+          <h4 class="contact-heading">How can we help?</h4>
+
+          <div class="row">
+            <div class="col-12">
+              <div id="divSelectHelpRqp" class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  name="inSelectHelp"
+                  value="rqp"
+                  id="inSelectHelpRqp"
+                  onchange="toggleOtherInput(this)"
+                />
+                <label for="inSelectHelpRqp">Request a quote or proposal</label>
+              </div>
+              <div id="divSelectHelpBap" class="form-check">
+                <input
+                  type="radio"
+                  name="inSelectHelp"
+                  class="form-check-input"
+                  value="bap"
+                  id="inSelectHelpBap"
+                  onchange="toggleOtherInput(this)"
+                />
+                <label for="inSelectHelpBap"
+                  >I'd like to become appointed</label
+                >
+              </div>
+              <div id="divSelectHelpGpi" class="form-check">
+                <input
+                  type="radio"
+                  name="inSelectHelp"
+                  class="form-check-input"
+                  value="gpi"
+                  id="inSelectHelpGpi"
+                  onchange="toggleOtherInput(this)"
+                />
+                <label for="inSelectHelpGpi">General Product Information</label>
+              </div>
+              <div id="divSelectHelpTsm" class="form-check">
+                <input
+                  type="radio"
+                  name="inSelectHelp"
+                  class="form-check-input"
+                  value="tsm"
+                  id="inSelectHelpTsm"
+                  onchange="toggleOtherInput(this)"
+                />
+                <label for="inSelectHelpTsm"
+                  >Have a Territory Sales Manager contact me</label
+                >
+              </div>
+              <div id="divSelectHelpOther" class="form-check">
+                <input
+                  type="radio"
+                  name="inSelectHelp"
+                  class="form-check-input"
+                  value="other"
+                  id="inSelectHelpOther"
+                  onchange="toggleOtherInput(this)"
+                />
+                <label for="inSelectHelpOther">Other</label>
+              </div>
+              <div class="col-md-6 col-sm-12 form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="onSelectHelpOtherText"
+                  id="inSelectHelpOtherText"
+                  style="display: none"
+                />
+              </div>
+              <div class="error-container"></div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="row">
+                <div class="col-12" style="margin-top: 10px">
+                  <h4 class="contact-heading">
+                    Which products are you interested in?
+                  </h4>
+                </div>
+                <div class="col-sm-12">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      name="CheckBoxToValidate"
+                      type="checkbox"
+                      value="select-all"
+                      id="select-all"
+                    />
+                    <label class="form-check-label" for="select-all">
+                      All</label
+                    >
+                  </div>
+                  <hr style="width: 300px" />
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      name="CheckBoxToValidate"
+                      type="checkbox"
+                      value="AccidentExpense"
+                      id="AccidentExpense"
+                    />
+                    <label class="form-check-label" for="AccidentExpense"
+                      >Accident Expense</label
+                    >
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      name="CheckBoxToValidate"
+                      type="checkbox"
+                      value=" Accidentidemnity"
+                      id=" Accidentidemnity"
+                    />
+                    <label class="form-check-label" for=" Accidentidemnity">
+                      Accident idemnity</label
+                    >
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      name="CheckBoxToValidate"
+                      type="checkbox"
+                      value="cancer"
+                      id="cancer"
+                    />
+                    <label class="form-check-label" for="cancer">Cancer</label>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      name="CheckBoxToValidate"
+                      type="checkbox"
+                      value="CriticalIllness"
+                      id="CriticalIllness"
+                    />
+                    <label class="form-check-label" for="CriticalIllness"
+                      >Critical ILLness</label
+                    >
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      name="CheckBoxToValidate"
+                      type="checkbox"
+                      value="dental"
+                      id="dental"
+                    />
+                    <label class="form-check-label" for="dental">Dental</label>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      name="CheckBoxToValidate"
+                      type="checkbox"
+                      value="gap"
+                      id="gap"
+                    />
+                    <label class="form-check-label" for="gap">Gap</label>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      name="CheckBoxToValidate"
+                      type="checkbox"
+                      value="HospitalIdemnity"
+                      id="HospitalIdemnity"
+                    />
+                    <label class="form-check-label" for="HospitalIdemnity"
+                      >Hospital Idemnity</label
+                    >
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      name="CheckBoxToValidate"
+                      type="checkbox"
+                      value="LimitedMedical"
+                      id="LimitedMedical"
+                    />
+                    <label class="form-check-label" for="LimitedMedical"
+                      >Limited Medical</label
+                    >
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      name="CheckBoxToValidate"
+                      type="checkbox"
+                      value="shortTermDisability"
+                      id="shortTermDisability"
+                    />
+                    <label class="form-check-label" for="shortTermDisability"
+                      >Short Term Disability</label
+                    >
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      name="CheckBoxToValidate"
+                      type="checkbox"
+                      value="Vision"
+                      id="Vision"
+                    />
+                    <label class="form-check-label" for="Vision">Vision</label>
+                  </div>
+                </div>
+
+                <div class="error-container"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12" style="margin-top: 15px">
+              <h4 class="contact-heading">Group information:</h4>
+            </div>
+            <div class="col-sm-12 col-md-8">
+              <div class="row">
+                <div class="col-md-6 col-sm-12 form-group">
+                  <label for="groupsize">Group Size </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="groupsize"
+                    name="groupsize"
+                  />
+                  <div class="error-container"></div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 form-group">
+                  <label for="situsstate">SITUS State </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="situsstate"
+                    name="situsstate"
+                  />
+                  <div class="error-container"></div>
+                </div>
+                <div class="col-md-6 col-sm-12 form-group">
+                  <label for="siccode">SIC Code </label>
+                  <input
+                    type="siccode"
+                    class="form-control"
+                    id="siccode"
+                    name="siccode"
+                  />
+                  <div class="error-container"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <h4 class="contact-heading">
+                Please provide some details about yourself:
+              </h4>
+            </div>
+
+            <div class="col-sm-12 col-md-8">
+              <div class="row">
+                <div class="col-md-6 col-sm-12 form-group">
+                  <label for="firstName"
+                    >First Name <span class="error-star">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    name="firstName"
+                  />
+                  <div class="error-container"></div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 form-group">
+                  <label for="lastName"
+                    >Last Name <span class="error-star">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    name="lastName"
+                  />
+                  <div class="error-container"></div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 form-group">
+                  <label for="addressLine1">Address Line 1 </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="addressLine1"
+                    name="addressLine1"
+                  />
+                  <div class="error-container"></div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 form-group">
+                  <label for="addressLine2">Address Line 2</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="addressLine2"
+                    name="addressLine2"
+                  />
+                  <div class="error-container"></div>
+                </div>
+                <div class="col-md-6 col-sm-12 form-group">
+                  <label for="city">City </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="city"
+                    name="city"
+                  />
+                  <div class="error-container"></div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <div class="row">
+                    <div class="col-md-6 col-sm-12 form-group">
+                      <label for="state">State </label>
+                      <select class="form-control" id="state" name="state">
+                        <option value="">Select State</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <!-- Add more states here -->
+                      </select>
+                      <div class="error-container"></div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 form-group">
+                      <label for="zipCode"
+                        >Zip Code <span class="error-star">*</span></label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="zipCode"
+                        name="zipCode"
+                      />
+                      <div class="error-container"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 form-group">
+                  <label for="email"
+                    >Email <span class="error-star">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                  />
+                  <div class="error-container"></div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 form-group">
+                  <label for="phone"
+                    >Phone Number <span class="error-star">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                  />
+                  <div class="error-container"></div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 form-group">
+                  <label for="businessagencyname">Business/Agency Name </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="businessagencyname"
+                    name="businessagencyname"
+                  />
+                  <div class="error-container"></div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 form-group">
+                  <label for="numberofemployees"
+                    >Number of eligible employees
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="numberofemployees"
+                    name="numberofemployees"
+                  />
+                  <div class="error-container"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <h4 class="input-heading">
+                I prefer to be contacted by: <span class="error-star">*</span>
+              </h4>
+            </div>
+
+            <div class="col-12">
+              <div id="divSelectHelpRqp" class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  name="typeOfContact"
+                  value="rqp"
+                  id="typeOfContactRqp"
+                />
+                <label for="typeOfContactRqp">Phone</label>
+              </div>
+              <div id="divSelectHelpBap" class="form-check">
+                <input
+                  type="radio"
+                  name="typeOfContact"
+                  class="form-check-input"
+                  value="bap"
+                  id="typeOfContactBap"
+                />
+                <label for="typeOfContactBap">Email</label>
+              </div>
+              <div id="divSelectHelpGpi" class="form-check">
+                <input
+                  type="radio"
+                  name="typeOfContact"
+                  class="form-check-input"
+                  value="gpi"
+                  id="typeOfContactGpi"
+                />
+                <label for="typeOfContactGpi">Number Preference</label>
+              </div>
+
+              <div class="error-container"></div>
+            </div>
+          </div>
+
+          <!--  -->
+
+          <div id="securityCode" style="margin-top: 15px">
+            <h4 class="contact-heading">
+              Please enter the security code you see below:
+            </h4>
+            <p></p>
+            <img
+              src="https://lh4.ggpht.com/916dm0D6KVhTtKbWFql0PT3IOOorudNoykZSQwvVpcMT_jdcFGlmmibpFoKjxg=w304"
+            />
+          </div>
+          <div class="row" style="margin-top: 5px">
+            <div class="col-md-4 col-sm-12 form-group">
+              <label for="securityCode"
+                >Security Code <span class="error-star">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="securityCode"
+                name="securityCode"
+              />
+              <div class="error-container"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-8" >
+              <button id="button" type="submit" class="btn btn-primary">
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script>
+      var selectAllCheckbox = document.getElementById("select-all"); // Get all the checkboxes
+      var checkboxes = document.querySelectorAll(
+        'input[name="CheckBoxToValidate"]'
+      );
+      // Add an event listener to the select all checkbox
+      selectAllCheckbox.addEventListener("click", function () {
+        // Check or uncheck all the checkboxes
+        for (var i = 0; i < checkboxes.length; i++) {
+          checkboxes[i].checked = this.checked;
+        }
+      });
+    </script>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

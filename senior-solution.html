@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Form" />
+    <meta
+      property="og:description"
+      content="Amet ullamcorper viverra nulla commodo risus, turpis feugiat tristique. Ut pulvinar ipsum nec non viverra turpi. Are you a hospitality professional looking for your next opportunity? As a largest and only national hospitality."
+    />
+    <meta property="og:image" content="assets/images/logo.png" />
+
+    <title>Prospective Agent Form</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/additional-methods.min.js"></script>
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <nav class="navbar navbar-expand-sm p-0">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="collapsibleNavId"
+          >
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="indexform.html"
+                  >Prospective Agent Form
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="senior-solution.html"
+                  >Senior Solutions Policy Holder Form</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="group-broker.html">
+                  Group broker Form</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="employe-group.html">
+                  Employer Group</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contactUs.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="RAQ.html"> RAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- / Header -->
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <h1>Senior Solutions Policy Holder Form</h1>
+        <form id="myForm" method="POST" action="submit.php">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-12 form-group">
+                <label for="firstName"
+                  >First Name <span class="error-star">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                />
+                <div class="error-container"></div>
+              </div>
+
+              <div class="col-md-6 col-sm-12 form-group">
+                <label for="lastName"
+                  >Last Name <span class="error-star">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  name="lastName"
+                />
+                <div class="error-container"></div>
+              </div>
+              <div class="col-md-6 col-sm-12 form-group">
+                <label for="email"
+                  >Email <span class="error-star">*</span>
+                </label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                />
+                <div class="error-container"></div>
+              </div>
+
+              <div class="col-md-6 col-sm-12 form-group">
+                <label for="phone"
+                  >Phone Number <span class="error-star">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                />
+                <div class="error-container"></div>
+              </div>
+
+              <div class="col-md-6 col-sm-12 form-group">
+                <label for="city">City <span class="error-star">*</span></label>
+                <input type="text" class="form-control" id="city" name="city" />
+                <div class="error-container"></div>
+              </div>
+
+              <div class="col-md-6 col-sm-12 form-group">
+                <label for="state"
+                  >State <span class="error-star">*</span></label
+                >
+                <select class="form-control" id="state" name="state">
+                  <option value="">Select State</option>
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <!-- Add more states here -->
+                </select>
+                <div class="error-container"></div>
+              </div>
+
+              <div class="col-md-6 col-sm-12 form-group">
+                <label for="addressLine1"
+                  >Address Line 1 <span class="error-star">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="addressLine1"
+                  name="addressLine1"
+                />
+                <div class="error-container"></div>
+              </div>
+              <div class="col-md-6 col-sm-12 form-group">
+                <label for="addressLine2">Address Line 2</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="addressLine2"
+                  name="addressLine2"
+                />
+                <div class="error-container"></div>
+              </div>
+              <div class="col-md-6 col-sm-12 form-group">
+                <label for="zipCode"
+                  >Zip Code <span class="error-star">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="zipCode"
+                  name="zipCode"
+                />
+                <div class="error-container"></div>
+              </div>
+              <div class="col-md-6 col-sm-12 form-group">
+                <label for="howDidYouHear"
+                  >How did you hear about us
+                  <span class="error-star">*</span></label
+                >
+                <select
+                  class="form-control"
+                  id="howDidYouHear"
+                  name="howDidYouHear"
+                >
+                  <option value="">Select Option</option>
+                  <option value="Friend">Friend</option>
+                  <option value="Website">Letter</option>
+                </select>
+                <div class="error-container"></div>
+              </div>
+
+              <div class="col-sm-12 form-group">
+                <label for="comment">Questions or Comments</label>
+                <textarea
+                  class="form-control"
+                  id="comment"
+                  rows="6"
+                  name="comment"
+                ></textarea>
+                <div class="error-container"></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12" >
+                  <button id="button" type="submit" class="btn btn-primary">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- / Hero -->
+
+    <!-- / Footer -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
