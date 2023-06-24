@@ -1,0 +1,127 @@
+.coverage-select {
+  background-color: red;
+}
+body {
+  background: #eaeaeb;
+}
+
+.wisconsin-heading {
+  font-family: Rockwell;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #53565A;
+
+}
+.state-heading {
+    font-family: Open Sans;
+font-size: 24px;
+font-weight: 700;
+line-height: 33px;
+letter-spacing: 0em;
+padding: 25px;
+text-align: center;
+color: white;
+background-color: #00857F;
+
+}
+.product-heading{
+    font-family: Open Sans;
+font-size: 18px;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0em;
+text-align: center;
+padding: 10px;
+
+}
+
+label {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.form-check-input:focus {
+  border-color: #adadad !important;
+  outline: 0;
+  box-shadow: none;
+}
+/* .form-check-input:checked {
+  background-color: #afeeee !important;
+  border-color: #afeeee !important;
+} */
+
+.available-checkbox{
+
+        width: 1em;
+        height: 1em;
+        margin-top: .25em;
+        vertical-align: top;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        border: 1px solid rgba(0,0,0,.25);  
+}
+
+.custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('../imagess/Group\ 1.png') no-repeat;
+    background-position: right center;
+    padding-right: 20px;
+    background-color: white;
+    width: 223px;
+  }
+  
+  #stateDetail {
+    position: absolute;
+    background-color: var(--mapStroke);
+    border-radius: min(2vw, 2vh);
+    border-color: #92c2ac;
+    border-style: groove;
+    background: #eeeeee;
+    font-size: 14px;
+  }
+
+  #stateDetail2 {
+    margin: 1vw 1vh 1vw 1vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 1vh;
+    flex-wrap: wrap;
+    column-gap: 1vw;
+    font-size: 14px;
+  }
+  
+  @media (min-width: 768px) {
+    #stateDetail {
+      padding: 1.5vw;
+      font-size: 16px;
+    }
+  
+    #stateDetail2 {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2vw;
+    }
+  }
+
+  button[type="submit"] {
+    background-color: #5f259f;
+    color: #ffffff !important;
+    border: solid 2px #5f259f;
+    font-size: 1em;
+    padding: 0.15em 1.1em !important;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #5f259f;
+    border: solid 2px #5f259f;
+  }
